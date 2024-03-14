@@ -1,6 +1,10 @@
 
 import './App.css';
 import Navbar from './Navbar';
+import Home from './Home';
+import AboutView from './Aboutview';
+import { Routes, Route } from 'react-router-dom';
+
 
 
 
@@ -8,7 +12,13 @@ function App() {
   return (
     <div>
       <Navbar />
-      <h1>Hello from react</h1>
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutView />} />
+
+      </Routes>
+
     </div>
   );
 }
