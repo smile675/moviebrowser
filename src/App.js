@@ -10,7 +10,7 @@ import SearchView from './SearchView';
 
 function App() {
   const [searchResults, setSearchResults] = useState([]);
-  const [serachText, setSearchText] = useState();
+  const [serachText, setSearchText] = useState('');
   return (
     <div>
       <Navbar searchText={serachText} setSearchText={setSearchText} />
